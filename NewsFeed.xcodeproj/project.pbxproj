@@ -14,8 +14,8 @@
 		89593B73282CFDFD004417F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89593B71282CFDFD004417F4 /* LaunchScreen.storyboard */; };
 		89593B81282CFEDD004417F4 /* NewsFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B80282CFEDD004417F4 /* NewsFeedController.swift */; };
 		89593B84282CFFA8004417F4 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B83282CFFA8004417F4 /* NewsCell.swift */; };
-		89593B86282D0209004417F4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B85282D0209004417F4 /* Network.swift */; };
-		89593B88282D08BB004417F4 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B87282D08BB004417F4 /* NewsModel.swift */; };
+		89593B86282D0209004417F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B85282D0209004417F4 /* Model.swift */; };
+		89593B88282D08BB004417F4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B87282D08BB004417F4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		89593B74282CFDFD004417F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89593B80282CFEDD004417F4 /* NewsFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedController.swift; sourceTree = "<group>"; };
 		89593B83282CFFA8004417F4 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
-		89593B85282D0209004417F4 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		89593B87282D08BB004417F4 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		89593B85282D0209004417F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		89593B87282D08BB004417F4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			children = (
 				89593B7C282CFE5A004417F4 /* ViewControllers */,
 				89593B7E282CFE78004417F4 /* Models */,
-				89593B7F282CFE7F004417F4 /* Networks */,
+				89593B7F282CFE7F004417F4 /* Service */,
 				89593B7B282CFE4F004417F4 /* Storyboards */,
 				89593B7A282CFE0A004417F4 /* App */,
 				89593B7D282CFE64004417F4 /* Resources */,
@@ -94,8 +94,8 @@
 		89593B7C282CFE5A004417F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				89593B82282CFF7D004417F4 /* Cell */,
 				89593B80282CFEDD004417F4 /* NewsFeedController.swift */,
+				89593B82282CFF7D004417F4 /* Cell */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,17 +111,17 @@
 		89593B7E282CFE78004417F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				89593B87282D08BB004417F4 /* NewsModel.swift */,
+				89593B85282D0209004417F4 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		89593B7F282CFE7F004417F4 /* Networks */ = {
+		89593B7F282CFE7F004417F4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				89593B85282D0209004417F4 /* Network.swift */,
+				89593B87282D08BB004417F4 /* NetworkManager.swift */,
 			);
-			path = Networks;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		89593B82282CFF7D004417F4 /* Cell */ = {
@@ -203,8 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89593B88282D08BB004417F4 /* NewsModel.swift in Sources */,
-				89593B86282D0209004417F4 /* Network.swift in Sources */,
+				89593B88282D08BB004417F4 /* NetworkManager.swift in Sources */,
+				89593B86282D0209004417F4 /* Model.swift in Sources */,
 				89593B81282CFEDD004417F4 /* NewsFeedController.swift in Sources */,
 				89593B67282CFDFC004417F4 /* AppDelegate.swift in Sources */,
 				89593B84282CFFA8004417F4 /* NewsCell.swift in Sources */,

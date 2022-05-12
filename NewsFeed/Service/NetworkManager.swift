@@ -1,5 +1,5 @@
 //
-//  NewsModel.swift
+//  NetworkManager.swift
 //  NewsFeed
 //
 //  Created by Борис Павлов on 12.05.2022.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class NewsModel {
+class NetworkManager {
     
-    let shared = NewsModel()
+    let shared = NetworkManager()
     
     static func fetchNewsFeed(url: String) {
         guard let url = URL(string: url) else { return }
@@ -20,7 +20,7 @@ class NewsModel {
                 return
             }
             do {
-                let newsFeedNetwork = try JSONDecoder().decode([NewsFeedNetwork].self, from: data)
+                let newsFeedNetwork = try JSONDecoder().decode(NewsFeedNetwork.self, from: data)
                 print(newsFeedNetwork)
             }catch let error {
                 print(error.localizedDescription)
