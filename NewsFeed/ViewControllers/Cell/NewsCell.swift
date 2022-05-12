@@ -14,7 +14,7 @@ class NewsCell: UITableViewCell {
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!
     
-    func configure(with newsFeed: Model) {
+    func configure(with newsFeed: Articles) {
         titleLabel.text = newsFeed.title
         authorLabel.text = newsFeed.author
         contentLabel.text = newsFeed.content

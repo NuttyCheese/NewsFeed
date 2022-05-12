@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkManager {
     
     let shared = NetworkManager()
     
-    static func fetchNewsFeed(url: String) {
+    static func fetchNewsFeed(url: String, completion: @escaping ([Articles]) -> Void) {
         guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -21,7 +22,9 @@ class NetworkManager {
             }
             do {
                 let newsFeedNetwork = try JSONDecoder().decode(NewsFeedNetwork.self, from: data)
-                print(newsFeedNetwork)
+                DispatchQueue.main.async {
+                    completion(newsFeedNetwork.articles ?? [])
+                }
             }catch let error {
                 print(error.localizedDescription)
             }

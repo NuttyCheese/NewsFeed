@@ -14,7 +14,7 @@
 		89593B73282CFDFD004417F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89593B71282CFDFD004417F4 /* LaunchScreen.storyboard */; };
 		89593B81282CFEDD004417F4 /* NewsFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B80282CFEDD004417F4 /* NewsFeedController.swift */; };
 		89593B84282CFFA8004417F4 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B83282CFFA8004417F4 /* NewsCell.swift */; };
-		89593B86282D0209004417F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B85282D0209004417F4 /* Model.swift */; };
+		89593B86282D0209004417F4 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B85282D0209004417F4 /* Articles.swift */; };
 		89593B88282D08BB004417F4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B87282D08BB004417F4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		89593B74282CFDFD004417F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89593B80282CFEDD004417F4 /* NewsFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedController.swift; sourceTree = "<group>"; };
 		89593B83282CFFA8004417F4 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
-		89593B85282D0209004417F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		89593B85282D0209004417F4 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		89593B87282D08BB004417F4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 		89593B7E282CFE78004417F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				89593B85282D0209004417F4 /* Model.swift */,
+				89593B85282D0209004417F4 /* Articles.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89593B88282D08BB004417F4 /* NetworkManager.swift in Sources */,
-				89593B86282D0209004417F4 /* Model.swift in Sources */,
+				89593B86282D0209004417F4 /* Articles.swift in Sources */,
 				89593B81282CFEDD004417F4 /* NewsFeedController.swift in Sources */,
 				89593B67282CFDFC004417F4 /* AppDelegate.swift in Sources */,
 				89593B84282CFFA8004417F4 /* NewsCell.swift in Sources */,

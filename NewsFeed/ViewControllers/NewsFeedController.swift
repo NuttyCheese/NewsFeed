@@ -9,19 +9,25 @@ import UIKit
 
 class NewsFeedController: UITableViewController {
 
-    private var newsFeedModel: [Model] = []
+    private var newsFeedArticles: [Articles] = []
     
-    private var networkManager = NetworkManager.fetchNewsFeed(url: Link.newsFeedURL.rawValue)
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NetworkManager.fetchNewsFeed(url: Link.newsFeedURL.rawValue) { newsFeedArticles in
+            self.newsFeedArticles = newsFeedArticles
+            self.tableView.reloadData()
+        }
+    }
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsFeedModel.count
+        return newsFeedArticles.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsCell
-        let newsModel = newsFeedModel[indexPath.row]
+        let newsModel = newsFeedArticles[indexPath.row]
         
         cell.configure(with: newsModel)
         
