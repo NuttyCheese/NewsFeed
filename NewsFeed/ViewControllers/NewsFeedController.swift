@@ -24,11 +24,9 @@ class NewsFeedController: UITableViewController {
 
         cell.backgroundColor = .gray
         
-        let newsFeed = Network.fetchNewsFeed(url: Link.newsFeedURL.rawValue)
-        print(newsFeed)
+        
         return cell
     }
-    
 
     /*
     // Override to support conditional editing of the table view.

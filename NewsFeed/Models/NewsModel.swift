@@ -5,6 +5,28 @@
 //  Created by Борис Павлов on 12.05.2022.
 //
 
-enum Link: String {
-    case newsFeedURL = "https://newsapi.org/v2/everything?q=tesla&from=2022-04-12&sortBy=publishedAt&apiKey=780c3cabfb5f4692b033a5a8e9c47865"
+import Foundation
+
+class NewsModel {
+    
+    let shared = NewsModel()
+    
+    static func fetchNewsFeed(url: String) {
+        guard let url = URL(string: url) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let newsFeedNetwork = try JSONDecoder().decode([NewsFeedNetwork].self, from: data)
+                print(newsFeedNetwork)
+            }catch let error {
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
+    
+    init() {}
 }

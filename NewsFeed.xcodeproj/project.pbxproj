@@ -62,8 +62,8 @@
 		89593B65282CFDFC004417F4 /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				89593B7E282CFE78004417F4 /* Models */,
 				89593B7C282CFE5A004417F4 /* ViewControllers */,
+				89593B7E282CFE78004417F4 /* Models */,
 				89593B7F282CFE7F004417F4 /* Networks */,
 				89593B7B282CFE4F004417F4 /* Storyboards */,
 				89593B7A282CFE0A004417F4 /* App */,
