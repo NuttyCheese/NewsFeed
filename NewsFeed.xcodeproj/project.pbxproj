@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893097B32837B83000652CFB /* ParseJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893097B22837B83000652CFB /* ParseJSONViewController.swift */; };
 		89593B67282CFDFC004417F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B66282CFDFC004417F4 /* AppDelegate.swift */; };
 		89593B69282CFDFC004417F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B68282CFDFC004417F4 /* SceneDelegate.swift */; };
 		89593B6E282CFDFC004417F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89593B6C282CFDFC004417F4 /* Main.storyboard */; };
@@ -16,9 +17,11 @@
 		89593B84282CFFA8004417F4 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B83282CFFA8004417F4 /* NewsCell.swift */; };
 		89593B86282D0209004417F4 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B85282D0209004417F4 /* Articles.swift */; };
 		89593B88282D08BB004417F4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B87282D08BB004417F4 /* NetworkManager.swift */; };
+		89593B942833BE20004417F4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89593B932833BE20004417F4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		893097B22837B83000652CFB /* ParseJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseJSONViewController.swift; path = NewsFeed/ViewControllers/ParseJSONViewController.swift; sourceTree = SOURCE_ROOT; };
 		89593B63282CFDFC004417F4 /* NewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89593B66282CFDFC004417F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89593B68282CFDFC004417F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		89593B83282CFFA8004417F4 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		89593B85282D0209004417F4 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		89593B87282D08BB004417F4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		89593B932833BE20004417F4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +98,9 @@
 		89593B7C282CFE5A004417F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				89593B932833BE20004417F4 /* TableViewController.swift */,
 				89593B80282CFEDD004417F4 /* NewsFeedController.swift */,
+				893097B22837B83000652CFB /* ParseJSONViewController.swift */,
 				89593B82282CFF7D004417F4 /* Cell */,
 			);
 			path = ViewControllers;
@@ -204,8 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89593B88282D08BB004417F4 /* NetworkManager.swift in Sources */,
+				89593B942833BE20004417F4 /* TableViewController.swift in Sources */,
 				89593B86282D0209004417F4 /* Articles.swift in Sources */,
 				89593B81282CFEDD004417F4 /* NewsFeedController.swift in Sources */,
+				893097B32837B83000652CFB /* ParseJSONViewController.swift in Sources */,
 				89593B67282CFDFC004417F4 /* AppDelegate.swift in Sources */,
 				89593B84282CFFA8004417F4 /* NewsCell.swift in Sources */,
 				89593B69282CFDFC004417F4 /* SceneDelegate.swift in Sources */,

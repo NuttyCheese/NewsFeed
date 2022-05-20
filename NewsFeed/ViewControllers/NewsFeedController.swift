@@ -9,7 +9,7 @@ import UIKit
 
 class NewsFeedController: UITableViewController {
 
-    private var newsFeedArticles: [Articles] = []
+    var newsFeedArticles: [Articles] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
